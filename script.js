@@ -1,7 +1,7 @@
 // Animal class
 class Animal {
   constructor(species) {
-    this._species = species;
+    this._species = species; // Store species in a private variable
   }
 
   // Getter for species
@@ -9,7 +9,7 @@ class Animal {
     return this._species;
   }
 
-  // Method to make a sound
+  // Method to log a sound message
   makeSound() {
     console.log(`The ${this.species} makes a sound`);
   }
@@ -17,7 +17,7 @@ class Animal {
 
 // Dog class extends Animal
 class Dog extends Animal {
-  // Method for dog-specific behavior
+  // Method specific to dogs
   bark() {
     console.log("woof");
   }
@@ -25,7 +25,7 @@ class Dog extends Animal {
 
 // Cat class extends Animal
 class Cat extends Animal {
-  // Method for cat-specific behavior
+  // Method specific to cats
   purr() {
     console.log("purr");
   }
